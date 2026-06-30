@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 type Post = { title: string; date: string; category: string; image: string; body: React.ReactNode };
 
@@ -4072,7 +4073,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     return (
       <section className="blog-post">
         <div className="container">
-          <a href="/blog/" className="back-link">&larr; All Insights</a>
+          <Link href="/blog/" className="back-link">&larr; All Insights</Link>
           <p>Post not found.</p>
         </div>
       </section>
@@ -4094,7 +4095,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         </div>
       )}
       <section className="blog-post">
-        <a href="/blog/" className="back-link">&larr; All Insights</a>
+        <Link href="/blog/" className="back-link">&larr; All Insights</Link>
         {!post.image && (
           <div className="blog-post-header">
             <span className="blog-category">{post.category}</span>

@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 export default function Footer() {
   return (
     <footer>
@@ -5,8 +8,7 @@ export default function Footer() {
         <div className="footer-main">
           <div className="footer-brand">
             <div className="footer-logo">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 alt="Other10 Logo"
                 width={140}
                 height={35}
@@ -25,42 +27,24 @@ export default function Footer() {
             <div className="footer-column">
               <h4>Company</h4>
               <ul>
-                <li>
-                  <a href="/about/">About Us</a>
-                </li>
-                <li>
-                  <a href="/">Portfolio</a>
-                </li>
-                <li>
-                  <a href="/pricing/">Investment</a>
-                </li>
+                <li><Link href="/about/">About Us</Link></li>
+                <li><Link href="/">Portfolio</Link></li>
+                <li><Link href="/pricing/">Investment</Link></li>
               </ul>
             </div>
             <div className="footer-column">
               <h4>Legal</h4>
               <ul>
-                <li>
-                  <a href="/privacy/">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="/terms/">Terms of Service</a>
-                </li>
+                <li><Link href="/privacy/">Privacy Policy</Link></li>
+                <li><Link href="/terms/">Terms of Service</Link></li>
               </ul>
             </div>
             <div className="footer-column">
               <h4>Contact</h4>
               <ul>
-                <li>
-                  <a href="mailto:hello@other10.com">hello@other10.com</a>
-                </li>
-                <li>
-                  <a href="mailto:partnerships@other10.com">
-                    partnerships@other10.com
-                  </a>
-                </li>
-                <li>
-                  <a href="/contact/">Get in Touch</a>
-                </li>
+                <li><a href="mailto:hello@other10.com">hello@other10.com</a></li>
+                <li><a href="mailto:partnerships@other10.com">partnerships@other10.com</a></li>
+                <li><Link href="/contact/">Get in Touch</Link></li>
               </ul>
             </div>
           </div>

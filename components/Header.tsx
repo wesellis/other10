@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,24 +25,21 @@ export default function Header() {
       </div>
       <div className="container">
         <div className="header-main flex items-center justify-between">
-          <a href="/" className="logo">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+          <Link href="/" className="logo">
+            <Image
               alt="Other10 Logo"
               width={200}
               height={50}
               src="/images/Other10-Logo-WHT-V1.png"
             />
-          </a>
+          </Link>
           <nav className="main-nav hidden md:flex">
-            <a href="/">Portfolio</a>
-            <a href="/services/">Capabilities</a>
-            <a href="/pricing/">Investment</a>
-            <a href="/about/">About</a>
-            <a href="/blog/">Insights</a>
-            <a href="/contact/" className="nav-cta">
-              Partner With Us
-            </a>
+            <Link href="/">Portfolio</Link>
+            <Link href="/services/">Capabilities</Link>
+            <Link href="/pricing/">Investment</Link>
+            <Link href="/about/">About</Link>
+            <Link href="/blog/">Insights</Link>
+            <Link href="/contact/" className="nav-cta">Partner With Us</Link>
           </nav>
           <button
             aria-label="Toggle menu"
@@ -53,24 +52,12 @@ export default function Header() {
       </div>
       {menuOpen && (
         <nav className="mobile-nav md:hidden">
-          <a href="/" onClick={() => setMenuOpen(false)}>
-            Portfolio
-          </a>
-          <a href="/services/" onClick={() => setMenuOpen(false)}>
-            Capabilities
-          </a>
-          <a href="/pricing/" onClick={() => setMenuOpen(false)}>
-            Investment
-          </a>
-          <a href="/about/" onClick={() => setMenuOpen(false)}>
-            About
-          </a>
-          <a href="/blog/" onClick={() => setMenuOpen(false)}>
-            Insights
-          </a>
-          <a href="/contact/" onClick={() => setMenuOpen(false)}>
-            Partner With Us
-          </a>
+          <Link href="/" onClick={() => setMenuOpen(false)}>Portfolio</Link>
+          <Link href="/services/" onClick={() => setMenuOpen(false)}>Capabilities</Link>
+          <Link href="/pricing/" onClick={() => setMenuOpen(false)}>Investment</Link>
+          <Link href="/about/" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link href="/blog/" onClick={() => setMenuOpen(false)}>Insights</Link>
+          <Link href="/contact/" onClick={() => setMenuOpen(false)}>Partner With Us</Link>
         </nav>
       )}
     </header>

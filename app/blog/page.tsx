@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 type BlogPost = {
   slug: string;
   title: string;
@@ -152,7 +154,7 @@ export default function BlogIndex() {
         <div className="container">
           <div className="blog-grid">
             {posts.map((post) => (
-              <a key={post.slug} href={`/blog/${post.slug}/`} className="blog-card">
+              <Link key={post.slug} href={`/blog/${post.slug}/`} className="blog-card">
                 <div className="blog-card-image" style={{ backgroundImage: `url(${post.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                 <div className="blog-card-content">
                   <div className="blog-meta">
@@ -163,7 +165,7 @@ export default function BlogIndex() {
                   <p className="blog-excerpt">{post.excerpt}</p>
                   <span className="blog-read-more">Read More &rarr;</span>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
