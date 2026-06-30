@@ -1,5 +1,7 @@
 # Other10
 
+**Live site:** https://wesellis.github.io/other10/
+
 Enterprise software portfolio site built with Next.js 16, React 19, TypeScript, and Tailwind CSS. Static export deploys to any web server.
 
 ## Getting Started
