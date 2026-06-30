@@ -13,7 +13,7 @@ export default function Footer() {
                 width={140}
                 height={35}
                 style={{ height: '35px', width: 'auto' }}
-                src="/images/Other10-Logo-WHT-V1.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/Other10-Logo-WHT-V1.png`}
               />
             </div>
             <p className="footer-tagline">

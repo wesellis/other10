@@ -30,7 +30,7 @@ export default function Header() {
               alt="Other10 Logo"
               width={200}
               height={50}
-              src="/images/Other10-Logo-WHT-V1.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/Other10-Logo-WHT-V1.png`}
             />
           </Link>
           <nav className="main-nav hidden md:flex">
