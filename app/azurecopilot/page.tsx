@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function AzureCopilot() {
   return (
     <>
@@ -329,9 +330,12 @@ export default function AzureCopilot() {
         <div className="container">
           <h2>INTERESTED IN AZUREAI-COPILOT?</h2>
           <p>A well-engineered foundation with 255 source files and 6 AI agents. Needs 2-3 days of integration work to connect components. Contact us to discuss acquisition or partnership opportunities.</p>
-          <a href="/contact/" className="hero-cta">Contact Us →</a>
+          <Link href="/contact/" className="hero-cta">Contact Us →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

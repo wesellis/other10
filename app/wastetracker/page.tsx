@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function WasteTracker() {
   return (
     <>
@@ -450,9 +451,12 @@ export default function WasteTracker() {
         <div className="container">
           <h2>INTERESTED IN WASTETRACKER?</h2>
           <p>A partially built restaurant waste management platform targeting a $162B problem. Perfect for restaurant tech companies or food distributors with existing customer relationships. Contact us to discuss acquisition details.</p>
-          <a href="/contact/" className="hero-cta">Contact Us →</a>
+          <Link href="/contact/" className="hero-cta">Contact Us →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

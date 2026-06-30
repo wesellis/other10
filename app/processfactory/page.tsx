@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function ProcessFactory() {
   return (
     <>
@@ -403,7 +404,7 @@ export default function ProcessFactory() {
               <p>Based on development costs ($85K), Azure AI integration ($25K), pilot customer validation ($10K), and conservative 1-2x first-year revenue multiple. The business process automation market is exploding—enterprises are desperate for Azure-native alternatives to expensive RPA platforms. Similar workflow automation tools trade at $5M-$25M valuations.</p>
               <p style={{ marginTop: '20px' }}>You&apos;re acquiring production-ready enterprise software at 95% discount because it&apos;s pre-revenue. Perfect for Microsoft partners, Azure-focused VARs, or enterprise software companies. With Azure partnership and proper enterprise sales, this can reach $1M-$2M ARR within 18-24 months, making the $125K price a 10-15x ROI opportunity. The Azure ecosystem provides built-in distribution channel.</p>
             </div>
-            <a href="/contact/" className="hero-cta" style={{ marginTop: '40px', display: 'block', width: 'fit-content', marginLeft: 'auto', marginRight: 'auto' }}>Schedule Acquisition Call</a>
+            <Link href="/contact/" className="hero-cta" style={{ marginTop: '40px', display: 'block', width: 'fit-content', marginLeft: 'auto', marginRight: 'auto' }}>Schedule Acquisition Call</Link>
           </div>
         </div>
       </section>
@@ -411,9 +412,12 @@ export default function ProcessFactory() {
         <div className="container">
           <h2>READY TO AUTOMATE THE ENTERPRISE?</h2>
           <p>ProcessFactory solves a $19.6 billion problem for Azure-using enterprises. The technology is proven, the Azure partnership channel is massive, and customers are desperate for affordable automation.</p>
-          <a href="/contact/" className="hero-cta">Contact Us About Purchase →</a>
+          <Link href="/contact/" className="hero-cta">Contact Us About Purchase →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

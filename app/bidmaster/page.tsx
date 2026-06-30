@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function BidMaster() {
   return (
     <>
@@ -378,9 +379,12 @@ export default function BidMaster() {
         <div className="container">
           <h2>READY TO ACQUIRE BIDMASTER?</h2>
           <p>A production-ready construction bid management platform with 5 unique features and clear path to $362K ARR. Contact us to discuss acquisition opportunities.</p>
-          <a href="/contact/" className="hero-cta">Contact Us →</a>
+          <Link href="/contact/" className="hero-cta">Contact Us →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function PricingPage() {
   return (
     <>
@@ -21,7 +22,7 @@ export default function PricingPage() {
                 <li>Detailed Project Roadmap</li>
                 <li>Cost &amp; Timeline Estimates</li>
               </ul>
-              <a href="/contact/" className="pricing-cta">Schedule Session</a>
+              <Link href="/contact/" className="pricing-cta">Schedule Session</Link>
             </div>
             <div className="pricing-card">
               <h3>WEB DESIGN</h3>
@@ -35,7 +36,7 @@ export default function PricingPage() {
                 <li>Content Management System</li>
                 <li>3 Months Support</li>
               </ul>
-              <a href="/contact/" className="pricing-cta">Get Quote</a>
+              <Link href="/contact/" className="pricing-cta">Get Quote</Link>
             </div>
             <div className="pricing-card featured">
               <span className="featured-badge">MOST POPULAR</span>
@@ -50,7 +51,7 @@ export default function PricingPage() {
                 <li>Cloud Infrastructure Setup</li>
                 <li>6 Months Support &amp; Updates</li>
               </ul>
-              <a href="/contact/" className="pricing-cta">Discuss Project</a>
+              <Link href="/contact/" className="pricing-cta">Discuss Project</Link>
             </div>
           </div>
           <div className="enterprise-tier">
@@ -141,16 +142,19 @@ export default function PricingPage() {
             </div>
             <div className="enterprise-cta-container">
               <p>Schedule a consultation to discuss your enterprise requirements and receive a custom proposal.</p>
-              <a href="/contact/" className="enterprise-cta">Contact Enterprise Sales →</a>
+              <Link href="/contact/" className="enterprise-cta">Contact Enterprise Sales →</Link>
             </div>
           </div>
           <div className="retainer-box">
             <h3>RETAINER SERVICES</h3>
             <p>Ongoing development, maintenance, and support services available from <strong>$8,000/month</strong></p>
-            <a href="/contact/" className="pricing-cta">Inquire About Retainers</a>
+            <Link href="/contact/" className="pricing-cta">Inquire About Retainers</Link>
           </div>
         </div>
       </section>
     </>
   );
 }
+
+
+

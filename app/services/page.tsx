@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function ServicesPage() {
   return (
     <>
@@ -25,7 +26,7 @@ export default function ServicesPage() {
                 <li>Performance-optimized assets</li>
                 <li>SEO-friendly architecture</li>
               </ul>
-              <a href="/contact/" className="service-cta">Start Your Project</a>
+              <Link href="/contact/" className="service-cta">Start Your Project</Link>
             </div>
           </div>
           <div className="service-card">
@@ -44,7 +45,7 @@ export default function ServicesPage() {
                 <li>API design and integration</li>
                 <li>Cloud infrastructure (AWS, Azure, DO)</li>
               </ul>
-              <a href="/contact/" className="service-cta">Discuss Your Platform</a>
+              <Link href="/contact/" className="service-cta">Discuss Your Platform</Link>
             </div>
           </div>
           <div className="service-card">
@@ -63,7 +64,7 @@ export default function ServicesPage() {
                 <li>Usability testing and iteration</li>
                 <li>Accessibility compliance (WCAG)</li>
               </ul>
-              <a href="/contact/" className="service-cta">Enhance Your UX</a>
+              <Link href="/contact/" className="service-cta">Enhance Your UX</Link>
             </div>
           </div>
           <div className="service-card">
@@ -82,7 +83,7 @@ export default function ServicesPage() {
                 <li>Natural language interfaces</li>
                 <li>Predictive analytics systems</li>
               </ul>
-              <a href="/contact/" className="service-cta">Explore AI Solutions</a>
+              <Link href="/contact/" className="service-cta">Explore AI Solutions</Link>
             </div>
           </div>
           <div className="service-card">
@@ -101,7 +102,7 @@ export default function ServicesPage() {
                 <li>API documentation (OpenAPI/Swagger)</li>
                 <li>Real-time threat detection</li>
               </ul>
-              <a href="/contact/" className="service-cta">Secure Your APIs</a>
+              <Link href="/contact/" className="service-cta">Secure Your APIs</Link>
             </div>
           </div>
           <div className="service-card">
@@ -120,7 +121,7 @@ export default function ServicesPage() {
                 <li>Monitoring and alerting (PM2, CloudWatch)</li>
                 <li>Backup and disaster recovery</li>
               </ul>
-              <a href="/contact/" className="service-cta">Optimize Infrastructure</a>
+              <Link href="/contact/" className="service-cta">Optimize Infrastructure</Link>
             </div>
           </div>
         </div>
@@ -166,9 +167,12 @@ export default function ServicesPage() {
         <div className="container">
           <h2>READY TO TRANSFORM YOUR BUSINESS?</h2>
           <p>Let&apos;s discuss how our expertise can help you build exceptional digital products that drive real results. Schedule a consultation to explore partnership opportunities.</p>
-          <a href="/contact/" className="hero-cta">Start Your Project →</a>
+          <Link href="/contact/" className="hero-cta">Start Your Project →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

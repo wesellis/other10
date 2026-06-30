@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function GymFlow() {
   return (
     <>
@@ -17,7 +18,7 @@ export default function GymFlow() {
         </div>
         <div className="buttons">
           <a href="#overview" className="btn btn-primary">Learn More</a>
-          <a href="/contact/" className="btn btn-secondary">Request Demo</a>
+          <Link href="/contact/" className="btn btn-secondary">Request Demo</Link>
         </div>
       </section>
       <div className="screenshots">
@@ -393,9 +394,12 @@ export default function GymFlow() {
         <div className="container">
           <h2>READY TO ACQUIRE GYMFLOW?</h2>
           <p>A production-ready gym management platform with mobile apps, payment processing, and comprehensive features. Contact us to discuss acquisition opportunities.</p>
-          <a href="/contact/" className="hero-cta">Contact Us →</a>
+          <Link href="/contact/" className="hero-cta">Contact Us →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

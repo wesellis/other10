@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function TrustPilot() {
   return (
     <>
@@ -382,9 +383,12 @@ export default function TrustPilot() {
         <div className="container">
           <h2>READY TO ACQUIRE TRUSTPILOT AI?</h2>
           <p>A production-ready enterprise data quality platform with autonomous AI agents. Contact us to discuss acquisition or partnership opportunities.</p>
-          <a href="/contact/" className="hero-cta">Contact Us →</a>
+          <Link href="/contact/" className="hero-cta">Contact Us →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 const projects = [
   {
     slug: 'shiftswappro',
@@ -164,9 +165,9 @@ export default function Home() {
               includes 3 live platforms, several production-ready projects, and
               honest assessments of what&apos;s complete vs. in-development.
             </p>
-            <a href="/contact/" className="hero-cta">
+            <Link href="/contact/" className="hero-cta">
               Explore Partnership Opportunities
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -199,7 +200,7 @@ export default function Home() {
           <h2 className="section-title">Project Portfolio</h2>
           <div className="portfolio-grid">
             {projects.map((p) => (
-              <a key={p.slug} href={`/${p.slug}/`} className="project-card">
+              <Link key={p.slug} href={`/${p.slug}/`} className="project-card">
                 <span className="status">{p.status}</span>
                 <div
                   className="project-image"
@@ -223,7 +224,7 @@ export default function Home() {
                     <span className="project-link primary">View Project →</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -236,11 +237,14 @@ export default function Home() {
             Explore acquisition opportunities, strategic partnerships, or
             white-label licensing for market-ready enterprise platforms.
           </p>
-          <a href="/contact/" className="hero-cta">
+          <Link href="/contact/" className="hero-cta">
             Schedule Consultation
-          </a>
+          </Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

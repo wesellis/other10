@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function MicroTool() {
   return (
     <>
@@ -386,9 +387,12 @@ export default function MicroTool() {
         <div className="container">
           <h2>READY TO ACQUIRE MICROTOOL DESKTOP?</h2>
           <p>A production-ready marketplace platform with 262 planned utilities. Contact us to discuss acquisition opportunities.</p>
-          <a href="/contact/" className="hero-cta">Contact Us →</a>
+          <Link href="/contact/" className="hero-cta">Contact Us →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

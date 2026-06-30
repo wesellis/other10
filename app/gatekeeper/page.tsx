@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function GateKeeper() {
   return (
     <>
@@ -822,7 +823,7 @@ export default function GateKeeper() {
           <div style={{ background: 'var(--deep-black)', border: '3px solid var(--gold)', borderRadius: '8px', padding: '50px', marginTop: '50px', textAlign: 'center' }}>
             <h3 style={{ fontFamily: 'var(--font-cinzel)', color: 'var(--gold)', fontSize: '2.2rem', marginBottom: '25px', letterSpacing: '3px' }}>Let&apos;s Talk</h3>
             <p style={{ color: 'var(--white)', fontSize: '1.2rem', lineHeight: '1.9', maxWidth: '900px', margin: '0 auto 30px', opacity: '0.9' }}>I&apos;m flexible on structure. What matters is finding the right person to take this to market. If you have sales/marketing chops and see the opportunity here, let&apos;s discuss what makes sense for both of us.</p>
-            <a href="/contact/" className="hero-cta">Get In Touch</a>
+            <Link href="/contact/" className="hero-cta">Get In Touch</Link>
           </div>
         </div>
       </section>
@@ -830,9 +831,12 @@ export default function GateKeeper() {
         <div className="container">
           <h2>READY TO ACQUIRE G8KEPR?</h2>
           <p>A production-ready API security platform at 90% less cost than enterprise solutions. Contact us to discuss acquisition or partnership opportunities.</p>
-          <a href="/contact/" className="hero-cta">Contact Us →</a>
+          <Link href="/contact/" className="hero-cta">Contact Us →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

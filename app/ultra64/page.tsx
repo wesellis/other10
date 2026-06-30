@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function Ultra64() {
   return (
     <>
@@ -17,7 +18,7 @@ export default function Ultra64() {
         </div>
         <div className="buttons">
           <a href="#overview" className="btn btn-primary">Learn More</a>
-          <a href="/contact/" className="btn btn-secondary">Request Demo</a>
+          <Link href="/contact/" className="btn btn-secondary">Request Demo</Link>
         </div>
       </section>
       <div className="screenshots">
@@ -372,9 +373,12 @@ export default function Ultra64() {
         <div className="container">
           <h2>READY TO ACQUIRE ULTRA64?</h2>
           <p>A specialized retro gaming marketplace with passionate collector community. Contact us to discuss acquisition or partnership opportunities.</p>
-          <a href="/contact/" className="hero-cta">Contact Us →</a>
+          <Link href="/contact/" className="hero-cta">Contact Us →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

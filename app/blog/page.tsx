@@ -122,14 +122,6 @@ const posts: BlogPost[] = [
     excerpt: "When we rebuilt our pricing page last quarter, we made a decision that seemed trivial: changing our mid-tier plan from $100/month to $99/month. The result?",
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop&sat=-100",
   },
-  {
-    slug: "art-deco-revival",
-    title: "The Art Deco Revival in Modern Web Design",
-    date: "January 15, 2025",
-    category: "Design",
-    excerpt: "The roaring twenties gave us jazz, flappers, and one of the most distinctive design movements in history: Art Deco.",
-    image: "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800&h=500",
-  },
 ];
 
 export default function BlogIndex() {
@@ -173,3 +165,4 @@ export default function BlogIndex() {
     </>
   );
 }
+

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function MatchRecon() {
   return (
     <>
@@ -405,9 +406,12 @@ export default function MatchRecon() {
         <div className="container">
           <h2>READY TO TRANSFORM AP AUTOMATION?</h2>
           <p>MatchRecon is a LIVE, production-ready AI solution currently in beta at matchrecon.com. With 47,000 lines of code, active infrastructure, and immediate revenue potential, this is a rare opportunity to acquire a functioning SaaS business targeting a massive B2B market with strong unit economics.</p>
-          <a href="/contact/" className="hero-cta">Contact Us →</a>
+          <Link href="/contact/" className="hero-cta">Contact Us →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

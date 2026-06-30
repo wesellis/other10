@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function ShiftSwapPro() {
   return (
     <>
@@ -386,9 +387,12 @@ export default function ShiftSwapPro() {
         <div className="container">
           <h2>READY TO TRANSFORM WORKFORCE MANAGEMENT?</h2>
           <p>ShiftSwap Pro solves a $12.5 billion problem for 150,000+ businesses. The technology is proven, the market is massive, and customers are desperate for a better solution.</p>
-          <a href="/contact/" className="hero-cta">Contact Us About Purchase →</a>
+          <Link href="/contact/" className="hero-cta">Contact Us About Purchase →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

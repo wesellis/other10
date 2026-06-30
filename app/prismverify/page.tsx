@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function PrismVerify() {
   return (
     <>
@@ -390,9 +391,12 @@ export default function PrismVerify() {
         <div className="container">
           <h2>READY TO ACQUIRE PRISMVERIFY?</h2>
           <p>A production-ready security assessment platform with clear path to $1.23M ARR. Contact us to discuss acquisition or partnership opportunities.</p>
-          <a href="/contact/" className="hero-cta">Contact Us →</a>
+          <Link href="/contact/" className="hero-cta">Contact Us →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

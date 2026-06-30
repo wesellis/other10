@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function AboutPage() {
   return (
     <>
@@ -100,9 +101,12 @@ export default function AboutPage() {
         <div className="container">
           <h2>LET&apos;S BUILD SOMETHING EXCEPTIONAL</h2>
           <p>Ready to partner with a team that values craftsmanship as much as you do? Let&apos;s discuss your project and explore how we can bring your vision to life.</p>
-          <a href="/contact/" className="hero-cta">Begin Your Project →</a>
+          <Link href="/contact/" className="hero-cta">Begin Your Project →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+

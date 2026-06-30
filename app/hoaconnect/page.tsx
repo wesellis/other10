@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function HoaConnect() {
   return (
     <>
@@ -411,9 +412,12 @@ export default function HoaConnect() {
         <div className="container">
           <h2>READY TO ACQUIRE HOA CONNECT?</h2>
           <p>A 30% complete HOA management platform with solid foundation and clear path to market. Contact us to discuss acquisition details.</p>
-          <a href="/contact/" className="hero-cta">Contact Us →</a>
+          <Link href="/contact/" className="hero-cta">Contact Us →</Link>
         </div>
       </section>
     </>
   );
 }
+
+
+
